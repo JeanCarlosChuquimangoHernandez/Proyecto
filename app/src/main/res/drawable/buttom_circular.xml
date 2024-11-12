@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- res/drawable/circular_edittext_background.xml -->
+
+        <solid android:color="@color/white"/>
+        <stroke
+            android:width="2dp"
+            android:color="#8607F4"/> <!-- Cambia el color según tus preferencias -->
+        <corners android:radius="25dp"/> <!-- Hace que los bordes sean redondeados (circular) -->
+        <padding
+            android:left="8dp"
+            android:right="8dp"/>
+
+
+</shape>

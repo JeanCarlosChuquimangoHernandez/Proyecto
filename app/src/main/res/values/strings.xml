@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+
+    <string name="olvidaste_tu_contrase_a"><a href="https://www.youtube.com/watch?v=nCGPPcgvEyQ">¿Olvidaste tu contraseña?</a></string>
+    <string name="eres_nuevo_registrate"><a href="https://www.youtube.com/watch?v=nCGPPcgvEyQ">¿Eres nuevo? Registrate!</a></string>
+    <string name="reenviar"><a href="https://www.youtube.com/watch?v=nCGPPcgvEyQ">Reenviar</a></string>
+    <string name="ya_tienes_cuenta"><a href="https://www.youtube.com/watch?v=nCGPPcgvEyQ">¿Ya tienes Cuenta?</a></string>
+
+        <!-- Textos para la autenticación -->
+        <string name="create_account">Crear Cuenta</string>
+        <string name="sign_in_free">¿Ya tienes una cuenta? Inicia sesión</string>
+        <string name="action_sign_in">Iniciar Sesión</string>
+
+        <!-- Mensajes de error -->
+        <string name="error_invalid_email">Correo electrónico no válido</string>
+        <string name="error_invalid_password">La contraseña debe tener al menos 6 caracteres</string>
+
+        <!-- Mensajes de confirmación de email -->
+        <string name="confirm_email">Confirmación de Correo</string>
+        <string name="please_confirm_email">Por favor, confirma tu correo electrónico: %1$s</string>
+    <string name="ok">ok</string>
+
+    <string name="hint_latitud">Latitud</string>
+    <string name="hint_longitud">Longitud</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiamVhbmhlcm5hbmRlejE1MyIsImEiOiJjbTNmZGpscmQwbmJiMmxvbW43M3N3dXhjIn0.MlDZZDHlIUw85lKkAw60vg</string>
+
+</resources>
