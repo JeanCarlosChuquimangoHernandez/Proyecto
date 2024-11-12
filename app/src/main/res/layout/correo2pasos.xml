@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tiendafondo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purplue"
+        android:alpha="0.5" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:padding="28dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:text="Bienvenido a CompraP"
+            android:textColor="@color/purplue"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Verificacion de 2 pasos:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo electronico o numero telefonico"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:hint="Email"
+            android:minHeight="48dp"/>
+
+        <Button
+            android:id="@+id/cambioActividad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Iniciar Sesion"
+            android:textColor="@color/white"
+            android:background="@color/purplue"
+            android:layout_marginBottom="40dp"/>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

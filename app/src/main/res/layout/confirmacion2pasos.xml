@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tiendafondo">
+
+    <!-- Fondo con color púrpura y transparencia -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purplue"
+        android:alpha="0.5" />
+
+    <!-- CardView para el formulario -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-20dp"
+        app:cardCornerRadius="28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <!-- Título de bienvenida -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Bienvenido a CompraP"
+                android:textColor="@color/purplue"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- Texto de Instrucciones -->
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Ingrese código de verificación:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Etiqueta de Código de Verificación -->
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Código Verificación"
+                android:textSize="15sp" />
+
+            <!-- Campo de entrada para el Código de Verificación -->
+            <EditText
+                android:id="@+id/etVerificationCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:hint="Código"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textSize="15sp" />
+
+            <!-- Contenedor para los botones de Reenviar y Verificar -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp">
+
+                <!-- Enlace para reenviar código -->
+                <TextView
+                    android:id="@+id/volveractividad1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Reenviar código"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <!-- Botón de Verificar -->
+                <Button
+                    android:id="@+id/cambioActividad3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="Verificar"
+                    android:textColor="@color/white"
+                    android:background="@color/purplue" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
