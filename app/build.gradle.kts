@@ -70,6 +70,7 @@ dependencies {
     implementation ("com.mapbox.maps:android:10.10.0")
     implementation ("com.google.android.material:material:1.9.0")
 
+    implementation ("com.google.firebase:firebase-database-ktx")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
