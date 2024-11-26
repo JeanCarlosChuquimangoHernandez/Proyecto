@@ -1,0 +1,116 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Completa los datos de tu tarjeta"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Mensaje Informativo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/info_background"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Icono de información -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/info_background"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Texto informativo -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Activa las compras por internet en la app de tu banco o llamando al teléfono que está en la tarjeta."
+                android:layout_weight="1"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Campo: Número de Tarjeta -->
+        <EditText
+            android:id="@+id/etCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1234 1234 1234 1234"
+            android:inputType="number"
+            android:drawableEnd="@drawable/ic_card"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittex_backgroundd" />
+
+        <!-- Campo: Nombre del Titular -->
+        <EditText
+            android:id="@+id/etCardHolderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej.: María López"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittex_backgroundd" />
+
+        <!-- Campo: Vencimiento -->
+        <EditText
+            android:id="@+id/etExpirationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MM/AA"
+            android:inputType="text"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittex_backgroundd" />
+
+        <!-- Campo: Código de Seguridad -->
+        <EditText
+            android:id="@+id/etSecurityCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="123"
+            android:inputType="numberPassword"
+            android:drawableEnd="@drawable/ic_security"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittex_backgroundd" />
+
+        <!-- Botón Continuar -->
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continuar"
+            android:backgroundTint="@color/purplue"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+        <!-- Botón Volver -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

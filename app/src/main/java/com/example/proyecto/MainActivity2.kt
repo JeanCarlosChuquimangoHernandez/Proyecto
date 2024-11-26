@@ -1,24 +1,36 @@
 package com.example.proyecto
-import android.content.Intent
+
 import android.os.Bundle
-import android.widget.Button
-import androidx.activity.enableEdgeToEdge
+import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
 
-class MainActivity2 : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity(){
+
+    private lateinit var payview: Payview
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.correo2pasos)
 
-        val cambioActividad2 = findViewById<Button>(R.id.cambioActividad2)
+        payview = findViewById(R.id.payview)
 
-        cambioActividad2.setOnClickListener {
-            val explicitIntent = Intent(this, MainActivity3::class.java)
+        payview.setOnDataChangedListener(object : Payview.OnChangelistener{
+            override fun onChangelistener(payModel: PayModel?, isFillAllComponents:Boolean) {
+                Log.d("PayView", "data : ${payModel?.cardOwnerName} \n " +
+                        "is Fill all form component : $isFillAllComponents")
 
-            startActivity(explicitIntent)
-        }
+            }
+
+        })
+
+        payview.setPayOnclickListener(View.OnClickListener {
+            Log.d("PayView "," clicked. iss Fill all form Component : ${payview.isFillAllComponents}")
+        })
 
     }
+
+
 }

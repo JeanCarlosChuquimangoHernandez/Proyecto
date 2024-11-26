@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.googleService)
+    id ("kotlin-kapt")
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
@@ -56,21 +57,27 @@ android {
 
 dependencies {
 
-    implementation (platform("com.google.firebase:firebase-bom:33.5.1"))
-    implementation ("com.google.firebase:firebase-storage")
-    implementation ("com.google.android.material:material:1.12.0")
-    implementation ("androidx.constraintlayout:constraintlayout:2.2.0")
-   
-    implementation ("com.squareup.okhttp3:okhttp:4.9.3")
-    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
+    implementation("com.google.firebase:firebase-storage")
     implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-database-ktx") {
+        exclude(group = "com.google.api.grpc", module = "proto-google-common-protos")
+    }
     implementation("com.google.android.gms:play-services-auth:20.2.0")
-    implementation ("com.google.android.gms:play-services-location:21.0.1")
-    implementation ("com.google.android.gms:play-services-ads:21.2.0")
-    implementation ("com.mapbox.maps:android:10.10.0")
-    implementation ("com.google.android.material:material:1.9.0")
-
-    implementation ("com.google.firebase:firebase-database-ktx")
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.1")
+    implementation("com.google.android.gms:play-services-base:18.0.1")
+    implementation("androidx.core:core-ktx:1.15.0")
+    implementation("com.github.bumptech.glide:glide:4.15.1")
+    kapt("com.github.bumptech.glide:compiler:4.15.1")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.google.android.gms:play-services-ads:21.2.0")
+    implementation("com.mapbox.maps:android:10.10.0")
+    implementation("com.google.zxing:core:3.4.1")
+    implementation("com.journeyapps:zxing-android-embedded:4.3.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -103,5 +110,6 @@ dependencies {
 }
 
 dependencies {
+    implementation(libs.play.services.analytics.impl)
     implementation ("com.mapbox.maps:android:10.10.0")
 }

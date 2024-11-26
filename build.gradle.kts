@@ -6,7 +6,9 @@ plugins {
     alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin) apply false
 }
 buildscript {
-    dependencies {
-        classpath("com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.1")
-    }
+
+        dependencies {
+            classpath ("com.android.tools.build:gradle:8.1.4") // Versión correcta
+            classpath ("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0")
+        }
 }

@@ -6,22 +6,49 @@
     <string name="reenviar"><a href="https://www.youtube.com/watch?v=nCGPPcgvEyQ">Reenviar</a></string>
     <string name="ya_tienes_cuenta"><a href="https://www.youtube.com/watch?v=nCGPPcgvEyQ">¿Ya tienes Cuenta?</a></string>
 
-        <!-- Textos para la autenticación -->
-        <string name="create_account">Crear Cuenta</string>
-        <string name="sign_in_free">¿Ya tienes una cuenta? Inicia sesión</string>
-        <string name="action_sign_in">Iniciar Sesión</string>
+    <!-- Textos para la autenticación -->
+    <string name="create_account">Crear Cuenta</string>
+    <string name="sign_in_free">¿Ya tienes una cuenta? Inicia sesión</string>
+    <string name="action_sign_in">Iniciar Sesión</string>
 
-        <!-- Mensajes de error -->
-        <string name="error_invalid_email">Correo electrónico no válido</string>
-        <string name="error_invalid_password">La contraseña debe tener al menos 6 caracteres</string>
+    <!-- Mensajes de error -->
+    <string name="error_invalid_email">Correo electrónico no válido</string>
+    <string name="error_invalid_password">La contraseña debe tener al menos 6 caracteres</string>
 
-        <!-- Mensajes de confirmación de email -->
-        <string name="confirm_email">Confirmación de Correo</string>
-        <string name="please_confirm_email">Por favor, confirma tu correo electrónico: %1$s</string>
+    <!-- Mensajes de confirmación de email -->
+    <string name="confirm_email">Confirmación de Correo</string>
+    <string name="please_confirm_email">Por favor, confirma tu correo electrónico: %1$s</string>
     <string name="ok">ok</string>
 
     <string name="hint_latitud">Latitud</string>
     <string name="hint_longitud">Longitud</string>
     <string name="mapbox_access_token">pk.eyJ1IjoiamVhbmhlcm5hbmRlejE1MyIsImEiOiJjbTNmZGpscmQwbmJiMmxvbW43M3N3dXhjIn0.MlDZZDHlIUw85lKkAw60vg</string>
+
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="arrow_right">arrow_right\n</string>
+    <string name="product_image">product_image</string>
+    <string name="add_to_cart">add_to_cart\n</string>
+    <string name="cardname">Card Name</string>
+    <string name="cardname_helper_text">Enter to card name. You\'ll enter max 25 characters.</string>
+    <string name="pay">Pay</string>
+    <string name="cardno">Card No</string>
+    <string name="cardno_helper_text">You must enter your 16-digit card number.</string>
+    <string name="day_hint">12</string>
+    <string name="cardmonth">Month</string>
+    <string name="cardyear">Year</string>
+    <string name="cardcv">Cv Code</string>
+    <string name="cardyear_error_text">You must enter 2-digit characters and you\'ll enter to number the most digit-value is \'99\'</string>
+    <string name="cardmonth_error_text">You must enter 2-digit characters and you\'ll enter to number the most digit-value is \'12\'</string>
+    <string name="cardcv_error_text">You must enter 3-digit characters</string>
+    <string name="cardexpired_error_text">Your card has expired. Please enter the usage date correctly.</string>
+    <string name="tu_carrito">Tu Carrito</string>
+    <string name="category_icon">category_icon\n</string>
+    <string name="purchase_history">purchase_history\n</string>
+    <string name="historial_de_compras">Historial de Compras</string>
+    <string name="Configuracion">Configuracion</string>
+    <string name="profile_picture">profile_picture</string>
 
 </resources>

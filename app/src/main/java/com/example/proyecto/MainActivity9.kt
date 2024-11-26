@@ -47,7 +47,7 @@ class MainActivity9 : AppCompatActivity() {
         val cambioActividad10 = findViewById<Button>(R.id.cambiar10)
 
         cambioActividad10.setOnClickListener {
-            val explicitIntent = Intent(this, MainActivity10::class.java)
+            val explicitIntent = Intent(this, MainActivity3::class.java)
 
             startActivity(explicitIntent)
         }

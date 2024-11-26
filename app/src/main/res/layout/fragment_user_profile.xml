@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Foto de perfil -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_person"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="@string/profile_picture"
+            android:scaleType="centerCrop" />
+
+        <!-- Nombre del usuario -->
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de Usuario"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Correo del usuario -->
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="usuario@correo.com"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón Editar Perfil -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar Perfil"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_edit"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:backgroundTint="@color/google_gray"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/google_gray"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón Historial de Compras -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonPurchaseHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/historial_de_compras"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_history"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:backgroundTint="@color/google_gray"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón Configuración -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Configuracion"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/confi"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:backgroundTint="@color/google_gray"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón Cerrar Sesión -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_logout"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:backgroundTint="@color/google_gray"
+
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
+
